@@ -67,8 +67,6 @@ resource "aws_lambda_function" "contact" {
     source_code_hash = data.archive_file.contact.output_base64sha256
     timeout = 10
 
-    reserved_concurrent_executions = 2
-
     environment {
         variables = {
             RECIPIENT = var.contact_recipient_email
