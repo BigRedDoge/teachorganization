@@ -1,0 +1,74 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Geist+Mono:wght@400;500&display=swap');
+
+@theme {
+  /* Base */
+  --font-sans: 'Geist', ui-sans-serif, system-ui, sans-serif;
+  --font-mono: 'Geist Mono', ui-monospace, monospace;
+
+  /* Warm green + earthy palette */
+  --color-background: #FAFAF7;
+  --color-foreground: #2D3748;
+
+  --color-primary: #5E8A4A;
+  --color-primary-foreground: #FFFFFF;
+
+  --color-secondary: #EFF5EC;
+  --color-secondary-foreground: #3A5E2A;
+
+  --color-muted: #F2F5EF;
+  --color-muted-foreground: #6B7C5E;
+
+  --color-accent: #C8956C;
+  --color-accent-foreground: #FFFFFF;
+
+  --color-card: #FFFFFF;
+  --color-card-foreground: #2D3748;
+
+  --color-border: #D9E6D3;
+  --color-input: #D9E6D3;
+  --color-ring: #5E8A4A;
+
+  --color-destructive: #DC2626;
+
+  --radius-sm: 0.375rem;
+  --radius-md: 0.5rem;
+  --radius-lg: 0.75rem;
+  --radius-xl: 1rem;
+}
+
+:root {
+  --background: var(--color-background);
+  --foreground: var(--color-foreground);
+  --primary: var(--color-primary);
+  --primary-foreground: var(--color-primary-foreground);
+  --secondary: var(--color-secondary);
+  --secondary-foreground: var(--color-secondary-foreground);
+  --muted: var(--color-muted);
+  --muted-foreground: var(--color-muted-foreground);
+  --accent: var(--color-accent);
+  --accent-foreground: var(--color-accent-foreground);
+  --card: var(--color-card);
+  --card-foreground: var(--color-card-foreground);
+  --border: var(--color-border);
+  --input: var(--color-input);
+  --ring: var(--color-ring);
+  --destructive: var(--color-destructive);
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: var(--color-border);
+}
+
+body {
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+  scroll-behavior: smooth;
+}
